@@ -1,15 +1,9 @@
-# Spring Cloud Gateway
+# 🌐 Spring Cloud Gateway 서비스
 
-Spring Cloud Gateway는 API Gateway 서비스를 구현한 프로젝트입니다. Spring Cloud Gateway를 사용하여 마이크로서비스 아키텍처에서 라우팅, 필터링, 로드밸런싱 등의 기능을 제공합니다.
+본 저장소는 Spring Cloud Gateway를 활용한 API Gateway 서비스 프로젝트입니다.  
+마이크로서비스 아키텍처에서 라우팅, 필터링, 로드밸런싱 등의 핵심 기능을 제공합니다.
 
-## 기술 스택
-
-- Java
-- Spring Boot
-- Spring Cloud Gateway
-- Maven
-
-## 프로젝트 구조
+## 🧩 프로젝트 구성
 
 ```
 springcloud-gateway/
@@ -21,43 +15,64 @@ springcloud-gateway/
 └── pom.xml              # Maven 프로젝트 설정
 ```
 
-## 시작하기
+## 🛠 사용 기술
 
-### 필수 조건
+* Java 11+
+* Spring Boot
+* Spring Cloud Gateway
+* Maven 3.6+
+* Spring Cloud Netflix
 
-- JDK 11 이상
-- Maven 3.6 이상
+## 🚀 시작하기
 
-### 설치 및 실행
-
-1. 레포지토리 클론
+### 1. 저장소 클론
 ```bash
 git clone https://github.com/yongchulShin/springcloud-gateway.git
-```
-
-2. 프로젝트 디렉토리로 이동
-```bash
 cd springcloud-gateway
 ```
 
-3. 프로젝트 빌드
+### 2. 프로젝트 빌드
 ```bash
 ./mvnw clean install
 ```
 
-4. 애플리케이션 실행
+### 3. 애플리케이션 실행
 ```bash
 ./mvnw spring-boot:run
 ```
 
-## 주요 기능
+## ⚡ 주요 기능
 
-- API 라우팅
-- 요청/응답 필터링
-- 로드 밸런싱
-- 서비스 디스커버리 연동
-- 보안 설정
+* **라우팅**
+  - 동적 라우트 설정
+  - 서비스 디스커버리 연동
+  - URL 기반 라우팅
 
-## 라이선스
+* **필터링**
+  - 요청/응답 변형
+  - 헤더 수정
+  - 로깅
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+* **로드밸런싱**
+  - Round Robin
+  - Weight 기반 분산
+  - 서비스 인스턴스 동적 관리
+
+* **보안**
+  - JWT 토큰 검증
+  - Rate Limiting
+  - CORS 설정
+
+## 📋 API 문서
+
+API 문서는 Swagger를 통해 제공됩니다:
+```
+http://localhost:8080/swagger-ui.html
+```
+
+## 🙋‍♂️ About Me
+
+신용철 (Yongchul Shin)  
+전 서든어택 프로게이머 → 백엔드 개발자  
+GitHub: github.com/yongchulShin  
+Email: prozernim@gmail.com 
